@@ -1,0 +1,82 @@
+<html>
+  <head>
+
+    <title>НТВ | Розыгрыщ</title>
+    <script type="text/javascript" src="FirstTimeChecker.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slots.css" /> -->
+    <!-- <link rel="stylesheet"  href="includes/styles.css" type="text/css" media="screen"> -->
+    <script type="text/javascript" src="includes/jquery-1.7.2.prod.js"></script>
+    <script type="text/javascript" src="includes/utils.js"></script>
+    <script type="text/javascript" src="includes/ImageObj.js"></script>
+    <script type="text/javascript" src="includes/SlotDO.js"></script>
+    <script type="text/javascript" src="includes/SlotDO2.js"></script>
+    <script type="text/javascript" src="includes/buzz/buzz.js"></script>
+<!--<script src="index.js" type="text/javascript"></script>
+--><script src="includes/jquery.slotMachine.js" type="text/javascript"></script>
+<script>
+$(function(){
+  var slotData=new SlotDO2(),
+  slotData2=new SlotDO()
+    
+              slotControlHtml2=$('<div id="slotControls">'
+              +'<input type="button" id = "spin"  class="betMax" onclick="SetLocalStorage();" value="Испытать удачу">'
+              +'<p id="results"></p>'     
+              +'</div>');
+
+      $("#slotHolder2").slotMachine({
+       slotData:slotData2,
+     slotControls:slotControlHtml2
+       });
+});
+
+</script>
+ <link rel="stylesheet" type="text/css" href="includes/buttons.css"/>
+
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="header-content">
+        <a href="#default" class="logo"><img src="images/logo1024.png" class="logo-image"alt="NTV logo"></a>
+        <div class="header-right">
+          <p class="raffle-text">РОЗЫГРЫШ</p>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container">
+      <div id="first">
+          <h2>Добро пожаловать!</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptas quis vitae quasi dolor dicta, fuga soluta cupiditate eveniet illo nobis. Iure repellendus accusamus eaque minus tempore beatae sint autem. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Vero ad tempora nostrum veniam eum magnam esse architecto distinctio, delectus inventore praesentium error totam omnis quod quasi, nemo ab repudiandae blanditiis.</p>
+          <form>
+            <label for="fname">Введите Ваше имя:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Имя"><br>
+            <label for="fcompany">Введите название компании:</label><br>
+            <input type="text" id="fcompany" name="company" placeholder="Компания"><br><br>
+            <input type="button" id = "start" value="Начать">
+          </form>
+      </div>
+
+      <div id="last">
+        <p>Вы уже играли! Ожидайте результатов конкурса.</p>
+      </div>
+
+
+      <div id="wrap">
+        <div class="slotHolder" id="slotHolder2">
+
+        </div>
+
+      </div>
+    </div>
+
+    <button type="button" id="restore">RESTORE AND MAKE IT FIRST TIME [CLICK + RELOAD]</button>
+
+    <form name="gform" id="gform" style="display:none;" enctype="text/plain" method="post" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+  </body>
+</html>
