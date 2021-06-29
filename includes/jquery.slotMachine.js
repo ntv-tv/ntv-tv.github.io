@@ -367,7 +367,7 @@ if (typeof Object.create !== 'function') {
             	var _name = document.getElementById("fname").value;
             	var _company = document.getElementById("fcompany").value;
             	var _reward = self.payoutTotal;
-            
+				
             	var _url = "https://docs.google.com/forms/d/e/1FAIpQLSe3Wx0V61TT_KewfbGaTOzm_E3-5kXGwAT5W8WA7tV7_u5R5g/formResponse?usp=pp_url&entry.1293273134=" + _name + "&entry.17574046=" + _company + "&entry.122678687=" + _reward + "&submit=Submit";
             
             	document.getElementById("gform").action = _url;
